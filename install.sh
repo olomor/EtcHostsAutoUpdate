@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# For Oracle Linux / CentOS / Fedora
+
 dnf install -y socat python3 && {
-cat <<EOF >/etc/cron.d/etc-hosts-autoupdate
+cat <<EOF >/etc/cron.d/linux-simple-ddns
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=root
